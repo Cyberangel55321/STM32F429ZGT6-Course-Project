@@ -1,0 +1,38 @@
+# ==============================
+# Keil MDK 工程核心忽略规则
+# ==============================
+
+# --- 1. 用户专属的工程配置（极易冲突） ---
+*.uvoptx
+*.uvguix.*
+# --- 2. 编译输出的“产品”和“零件” ---
+*.o
+*.obj
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.crf
+*.d
+# --- 3. 构建过程的“临时车间” ---
+MDK-ARM/DebugConfig/
+MDK-ARM/F429ZGT6/
+MDK-ARM/RTE/
+Objects/
+Listings/
+build/
+# --- 4. 调试与IDE的“临时笔记” ---
+*.ini
+*.dbg
+*.cdb
+*.tracespec
+*.jlink
+*.log
+*.plg
+# --- 5. 各种“备份”和“草稿纸” ---
+*.bak
+*.~*
+*.tmp
+# --- 6. 个性化添加 ---
+doc/
